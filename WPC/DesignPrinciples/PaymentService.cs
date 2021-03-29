@@ -22,13 +22,13 @@ namespace WPC.DesignPrinciples
 
         public bool Charge(int paymentAccountId, float amount)
         {
-            var account = PaymentAccounts.SingleOrDefault(x => x.Id == paymentAccountId);
+            var account = FindPaymentAccountById(paymentAccountId);
             if (account == null)
             {
                 return false;
             }
 
-            if (account.Incomes - account.Outcomes + account.AllowedDebit < amount)
+            if (GetBalance(paymentAccountId) + account.AllowedDebit < amount)
             {
                 return false;
             }
@@ -37,21 +37,26 @@ namespace WPC.DesignPrinciples
             return true;
         }
 
+        private PaymentAccount FindPaymentAccountById(int paymentAccountId)
+        {
+            return PaymentAccounts.SingleOrDefault(x => x.Id == paymentAccountId);
+        }
+
         public void Fund(int paymentAccountId, float amount)
         {
-            var customer = PaymentAccounts.Where(x => x.Id == paymentAccountId).SingleOrDefault();
-            if (customer == null)
+            var account = FindPaymentAccountById(paymentAccountId);
+            if (account == null)
             {
                 return;
             }
 
-            customer.Incomes += amount;
+            account.Incomes += amount;
         }
 
         public float? GetBalance(int paymentAccountId)
         {
-            var customer = PaymentAccounts.Where(x => x.Id == paymentAccountId).SingleOrDefault();
-            return customer?.Incomes - customer?.Outcomes;
+            var account = FindPaymentAccountById(paymentAccountId);
+            return account?.Incomes - account?.Outcomes;
         }
     }
 }
