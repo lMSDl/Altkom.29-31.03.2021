@@ -13,18 +13,11 @@ namespace WPC.DesignPrinciples
         public bool Charge(int paymentAccountId, float amount)
         {
             var account = FindPaymentAccountById(paymentAccountId);
-            if (account == null)
+            /*if (account == null)
             {
                 return false;
-            }
-
-            if (GetBalance(paymentAccountId) + account.AllowedDebit < amount)
-            {
-                return false;
-            }
-
-            account.Outcomes += amount;
-            return true;
+            }*/
+            return account?.Charge(amount) ?? false;
         }
 
         private PaymentAccount FindPaymentAccountById(int paymentAccountId)
@@ -35,18 +28,11 @@ namespace WPC.DesignPrinciples
         public void Fund(int paymentAccountId, float amount)
         {
             var account = FindPaymentAccountById(paymentAccountId);
-            if (account == null)
+            /*if (account == null)
             {
                 return;
-            }
-
-            account.Incomes += amount;
-        }
-
-        public float? GetBalance(int paymentAccountId)
-        {
-            var account = FindPaymentAccountById(paymentAccountId);
-            return account?.Incomes - account?.Outcomes;
+            }*/
+            account?.Fund(amount);
         }
     }
 }
