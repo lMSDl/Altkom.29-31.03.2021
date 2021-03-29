@@ -15,29 +15,34 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
             _stringBuilder.Append("Obiekt ma:");
         }
 
-        public void SetDoors(int value)
+        public IVehicleBuilder<string> SetDoors(int value)
         {
             _stringBuilder.Append($"{value} drzwi,");
+            return this;
         }
 
-        public void SetEnginePower(int value)
+        public IVehicleBuilder<string> SetEnginePower(int value)
         {
             _stringBuilder.Append($"silnik o mocy {value} HP,");
+            return this;
         }
 
-        public void SetSeats(int value)
+        public IVehicleBuilder<string> SetSeats(int value)
         {
             _stringBuilder.Append($"{value} siedzeń,");
+            return this;
         }
 
-        public void SetTrunkCapacity(int value)
+        public IVehicleBuilder<string> SetTrunkCapacity(int value)
         {
             _stringBuilder.Append($"{value}l pojemności bagażnika,");
+            return this;
         }
 
-        public void SetWheels(int value)
+        public IVehicleBuilder<string> SetWheels(int value)
         {
             _stringBuilder.Append($"{value} kół,");
+            return this;
         }
 
         public string Build()

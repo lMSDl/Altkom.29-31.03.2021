@@ -12,13 +12,13 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
         {
             //var vehicle = new Vehicle(4, 5, 4, 500, 100);
 
-            var vehicleBuilder = new VehicleBuilder();
-            vehicleBuilder.SetWheels(4);
-            vehicleBuilder.SetSeats(5);
-            vehicleBuilder.SetDoors(4);
-            vehicleBuilder.SetTrunkCapacity(500);
-            vehicleBuilder.SetEnginePower(100);
-            var vehicle = vehicleBuilder.Build();
+            var vehicle = new VehicleInfoBuilder()
+            .SetWheels(4)
+            .SetSeats(5)
+            .SetDoors(4)
+            .SetTrunkCapacity(500)
+            .SetEnginePower(100)
+            .Build();
 
             Console.WriteLine(vehicle);
         }

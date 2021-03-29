@@ -8,29 +8,34 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
 {
     public class VehicleBuilder : BaseVehicleBuilder
     {
-        public override void SetDoors(int value)
+        public override IVehicleBuilder<Vehicle> SetDoors(int value)
         {
             _vehicle.Doors = value;
+            return this;
         }
 
-        public override void SetEnginePower(int value)
+        public override IVehicleBuilder<Vehicle> SetEnginePower(int value)
         {
             _vehicle.EnginePower = value;
+            return this;
         }
 
-        public override void SetSeats(int value)
+        public override IVehicleBuilder<Vehicle> SetSeats(int value)
         {
             _vehicle.Seats = value;
+            return this;
         }
 
-        public override void SetTrunkCapacity(int value)
+        public override IVehicleBuilder<Vehicle> SetTrunkCapacity(int value)
         {
             _vehicle.TrunkCapacity = value;
+            return this;
         }
 
-        public override void SetWheels(int value)
+        public override IVehicleBuilder<Vehicle> SetWheels(int value)
         {
             _vehicle.Wheels = value;
+            return this;
         }
 
         public override Vehicle Build()

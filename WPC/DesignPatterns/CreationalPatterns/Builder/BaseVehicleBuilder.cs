@@ -16,10 +16,10 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
         }
 
         public abstract Vehicle Build();
-        public abstract void SetDoors(int value);
-        public abstract void SetEnginePower(int value);
-        public abstract void SetSeats(int value);
-        public abstract void SetTrunkCapacity(int value);
-        public abstract void SetWheels(int value);
+        public abstract IVehicleBuilder<Vehicle> SetDoors(int value);
+        public abstract IVehicleBuilder<Vehicle> SetEnginePower(int value);
+        public abstract IVehicleBuilder<Vehicle> SetSeats(int value);
+        public abstract IVehicleBuilder<Vehicle> SetTrunkCapacity(int value);
+        public abstract IVehicleBuilder<Vehicle> SetWheels(int value);
     }
 }
