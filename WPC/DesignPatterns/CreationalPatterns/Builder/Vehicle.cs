@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.CreationalPatterns.Builder
 {
-    public class Vehicle
+    public class Vehicle : ICloneable
     {
         internal Vehicle()
         {
@@ -14,6 +14,11 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
         }
 
         public static VehicleBuilder GetBuilder() => new VehicleBuilder();
+
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
 
         public Vehicle(int wheels, int seats)
         {

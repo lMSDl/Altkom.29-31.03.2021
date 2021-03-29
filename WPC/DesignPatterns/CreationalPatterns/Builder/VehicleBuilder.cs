@@ -40,7 +40,7 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
 
         public override Vehicle Build()
         {
-            return _vehicle;
+            return (Vehicle)_vehicle.Clone();
         }
     }
 }
