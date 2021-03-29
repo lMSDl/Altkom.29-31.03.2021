@@ -11,9 +11,11 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Square();
+            DesignPatterns.CreationalPatterns.Builder.Client.Execute();
 
-            FillAndCalculate(rectangle, 3, 5);
+            /*Rectangle rectangle = new Square();
+
+            FillAndCalculate(rectangle, 3, 5);*/
 
             Console.ReadLine();
         }
