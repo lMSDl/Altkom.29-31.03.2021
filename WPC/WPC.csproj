@@ -55,6 +55,8 @@
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\IdInfo.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\Person.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\Singleton\Client.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\Singleton\Context.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="DesignPrinciples\Entity.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
