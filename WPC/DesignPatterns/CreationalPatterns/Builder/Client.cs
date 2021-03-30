@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,15 +13,20 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
         {
             //var vehicle = new Vehicle(4, 5, 4, 500, 100);
 
-            var vehicle = new VehicleInfoBuilder()
-            .SetWheels(4)
-            .SetSeats(5)
-            .SetDoors(4)
-            .SetTrunkCapacity(500)
-            .SetEnginePower(100)
-            .Build();
+            var vehicle = new VehicleBuilderFacade()
+                .Components
+                    .SetWheels(4)
+                    .SetSeats(5)
+                    .SetDoors(4)
+                    .SetTrunkCapacity(500)
+                    .SetEnginePower(100)
+                .Manufacturing
+                    .SetModel("Model")
+                    .SetManufacturer("Altkom")
+                    .SetProductionDate(DateTime.Now)
+                .Build();
 
-            Console.WriteLine(vehicle);
+            Console.WriteLine(JsonConvert.SerializeObject(vehicle));
         }
     }
 }

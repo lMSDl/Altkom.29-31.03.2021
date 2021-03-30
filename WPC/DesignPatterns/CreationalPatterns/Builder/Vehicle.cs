@@ -13,7 +13,7 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
 
         }
 
-        public static VehicleBuilder GetBuilder() => new VehicleBuilder();
+        public static VehicleBuilderFacade GetBuilder() => new VehicleBuilderFacade();
 
         public object Clone()
         {
@@ -53,5 +53,8 @@ namespace WPC.DesignPatterns.CreationalPatterns.Builder
         public int? TrunkCapacity { get; set; }
         public int? EnginePower { get; set; }
 
+        public string Manufacturer { get; set; }
+        public string Model { get; set; }
+        public DateTime ProductionDate { get; set; }
     }
 }
