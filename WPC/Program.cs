@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.CreationalPatterns.Singleton.Client.Execute();
+            DesignPatterns.CreationalPatterns.FactoryMethod.Client.Execute();
 
             /*Rectangle rectangle = new Square();
 

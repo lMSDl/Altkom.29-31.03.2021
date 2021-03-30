@@ -52,6 +52,13 @@
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\Vehicle.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\VehicleBuilder.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\VehicleInfoBuilder.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\Client.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\CustomElevator.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\Elevator.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\ElevatorGoTo.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\ElevatorUp.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\ElevatorDown.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\FactoryMethod\IElevatorOperation.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\IdInfo.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Prototype\Person.cs" />
