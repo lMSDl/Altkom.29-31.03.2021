@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Client.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Factories.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Interfaces.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Order.cs" />
+    <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Products.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\BaseVehicleBuilder.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\Builder\IVehicleBuilder.cs" />
