@@ -12,13 +12,14 @@ namespace WPC.DesignPatterns.StructuralPatterns.Decorator
         {
             var test = Console.ReadLine();
 
-            INotification notification = new Notification();
+            INotification notification = new CustomNotificationDecorator(new Notification());
             Console.WriteLine("SMS?");
             if (Console.ReadKey().KeyChar == 'y')
                 notification = new SmsDecorator(notification);
             Console.WriteLine("Email?");
             if (Console.ReadKey().KeyChar == 'y')
                 notification = new EmailDecorator(notification);
+
 
             notification.Send(test);
         }

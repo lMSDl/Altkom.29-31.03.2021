@@ -108,6 +108,7 @@
     <Compile Include="DesignPatterns\StructuralPatterns\Composite\ProductBase.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Decorator\BaseDecorator.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Decorator\Client.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\Decorator\CustomNotificationDecorator.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Decorator\EmailDecorator.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Decorator\INotification.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Decorator\Notification.cs" />
