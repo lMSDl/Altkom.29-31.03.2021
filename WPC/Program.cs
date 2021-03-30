@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.StructuralPatterns.Flyweight.Client.Execute();
+            DesignPatterns.StructuralPatterns.Proxy.Client.Execute();
 
             /*Rectangle rectangle = new Square();
 

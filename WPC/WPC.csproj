@@ -132,6 +132,10 @@
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\CarFlyweight.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\CarFlyweightFactory.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\Client.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\Proxy\Client.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\Proxy\Database.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\Proxy\DatabaseProxy.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\Proxy\IDatabase.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="DesignPrinciples\Entity.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
