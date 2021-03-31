@@ -132,6 +132,8 @@
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\CarFlyweight.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\CarFlyweightFactory.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Flyweight\Client.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\PrivateClassData\SomeClass.cs" />
+    <Compile Include="DesignPatterns\StructuralPatterns\PrivateClassData\SomeClassData.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Proxy\Client.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Proxy\Database.cs" />
     <Compile Include="DesignPatterns\StructuralPatterns\Proxy\DatabaseProxy.cs" />
