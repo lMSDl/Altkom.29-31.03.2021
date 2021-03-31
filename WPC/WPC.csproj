@@ -97,6 +97,13 @@
     <Compile Include="DesignPatterns\BehavioralPatterns\State\IState.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\State\State.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\State\WorkingState.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\Client.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\Logger.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\DatabaseLogger.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\DatabaseService.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\EmailLogger.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\FileLogger.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\TemplateMethod\FileService.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Interfaces.cs" />

@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.BehavioralPatterns.Stategy.Client.Execute();
+            DesignPatterns.BehavioralPatterns.TemplateMethod.Client.Execute();
 
             /*Rectangle rectangle = new Square();
 
