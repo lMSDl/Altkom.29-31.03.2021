@@ -83,6 +83,13 @@
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\SubscriberA.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Publisher.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Subscriber.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\Calculator.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\Client.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\ICalcStrategy.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\MultiplyCalcStrategy.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\DivideCalcStrategy.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\MinusCalcStrategy.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Stategy\PlusCalcStrategy.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\State\Client.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\State\CoffeeMachine.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\State\HeatingUpAtate.cs" />
