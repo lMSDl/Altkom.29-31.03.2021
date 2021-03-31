@@ -78,6 +78,11 @@
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\IRestorable.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\Memento.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\Person.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Client.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Observer\SubscriberB.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Observer\SubscriberA.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Publisher.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Subscriber.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Interfaces.cs" />
