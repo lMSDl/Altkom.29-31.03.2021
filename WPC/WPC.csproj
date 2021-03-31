@@ -78,6 +78,10 @@
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\IRestorable.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\Memento.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Memento\Person.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\NullObject\Client.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\NullObject\ConsoleOutput.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\NullObject\DebugOutput.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\NullObject\NullOutput.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\Client.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\SubscriberB.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Observer\SubscriberA.cs" />
@@ -118,6 +122,7 @@
     <Compile Include="DesignPatterns\BehavioralPatterns\Visitor\I\BoldText.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Visitor\I\Hyperlink.cs" />
     <Compile Include="DesignPatterns\BehavioralPatterns\Visitor\I\PlainText.cs" />
+    <Compile Include="DesignPatterns\BehavioralPatterns\NullObject\Output.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\CreationalPatterns\AbstractFactory\Interfaces.cs" />
